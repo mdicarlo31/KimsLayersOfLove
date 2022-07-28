@@ -13,3 +13,5 @@ Custom Cakes, Cupcakes and More
   • Show/hide one or more content areas or elements on your site through clicking a button or some other user interaction - must be done with some JavaScript code
     
   • Use Flexbox or CSS Grid to organize content areas based on mobile or desktop views
+
+

@@ -36,17 +36,37 @@
             <button id="hamburgerBtn">&#9776;</button>
             <ul id="primaryNav">
                 <li class="active"><a href="index.html">About</a></li>
-                <li><a href="cheeseCakes.html">Cakes</a></li>
-                <li><a href="fruitPies.html">Cupcakes</a></li>
-                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Cakes</a></li>
+                <li><a href="#">Cupcakes</a></li>
+                <li><a href="#Contact">Contact</a></li>
             </ul>
                 </div> <!-- end row -->
     </nav>
-    
+    <div class="Contact" id="Contact">
+        
+    <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone contact-panel form-panel mdl-color--indigo-50">
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="name" required>
+            <label class="mdl-textfield__label" for="name">Your name</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="email" id="email">
+            <label class="mdl-textfield__label" for="email">Your email</label>
+          </div>
+          <div class="button-container clearfix">
+            <button id="contactButton" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent subscribe-button">
+              Contact for Booking!!
+            </button>
+          </div>
+
+</form>
+</div>
+</div>
     <main class="clearfix">
     <div class="row limited">
         <section class="column small-12">
-            <img src="assets\images\IMG_2995_.jpg" alt="pic of Kim" height="300" width="250">
+            <img src="assets\images\IMG_2995_.jpg" alt="pic of Kim" height="75" width="75">
         </section>
     </div><!-- end row -->
     
@@ -59,12 +79,12 @@
     <div class="row limited">
         <section class="column small-12 medium-6 labeled">
             <h6>Cakes</h6>
-            <img src="assets\images\IMG_1499001_.jpg" alt="birthday cake" height="175" width="125">
+            <img src="assets\images\IMG_1499001_.jpg" alt="birthday cake" height="100" width="75">
             <p>See More</p>
         </section>
         <section class="column small-12 medium-6 labeled">
             <h6>Cupcakes</h6>
-            <img src="assets\images\IMG_3054_.jpg" alt="cupcakes" height="175" width="125">
+            <img src="assets\images\IMG_3054_.jpg" alt="cupcakes" height="100" width="75">
             <p>See More</p>
         </section>
     </div><!-- end row -->
@@ -111,5 +131,32 @@
 
     <script src="js/menuToggle.js"></script>
 
+    <script>
+        var text = "";
+        function getBulletAction(form) {
+            text = form[0].value; //first input element. In this case, the first value is first name
+            return form[0].value;
+        }
+        function myFunc(form) {
+            var inputText = getBulletAction(form);
+            if (text == "") {
+                alert("Please add your first name.");
+            } else {
+                document.getElementById("thanks").innerHTML = getAction();
+            }
+        }
+        function getAction() { //return the name
+            let message = "Thank you for subscribing," + text + "!"
+            return message;
+        }
+    </script>
+
+<script src="app.js"></script>
+
+<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+
 </body>
+
+
+
 </html>
