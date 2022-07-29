@@ -15,4 +15,5 @@ Custom Cakes, Cupcakes and More
   • Use Flexbox or CSS Grid to organize content areas based on mobile or desktop views. 
   In the desktop view the single column under the hero image become two columns
 
+Added nth child to Nav screen for a css requirement
 

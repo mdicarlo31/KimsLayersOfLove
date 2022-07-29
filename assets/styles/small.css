@@ -70,7 +70,9 @@ nav li.active {background-color: rgba(0,0,0,0.5);}
 nav a:hover {background-color: rgba(0,0,0,0.2);}
 nav ul.open {display: block;}
 nav ul {display: none;}
-
+.nav-item:nth-child(even) a {
+    background-color:aquamarine;
+}
 
 main img {
 	width: 100%;
