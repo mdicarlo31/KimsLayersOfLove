@@ -8,10 +8,11 @@ Custom Cakes, Cupcakes and More
  
  Three features I've included from the requirements list are:
  
-  • A navigation menu that expands and collapses properly at desktop and mobile sizes
+  • A navigation menu that expands and collapses properly at mobile and desktop sizes
   
-  • Show/hide one or more content areas or elements on your site through clicking a button or some other user interaction - must be done with some JavaScript code
+  • Create a form ‘Contact Us’ form - responds with a "Thank You" when the 'Contact Us' is clicked
     
-  • Use Flexbox or CSS Grid to organize content areas based on mobile or desktop views
+  • Use Flexbox or CSS Grid to organize content areas based on mobile or desktop views. 
+  In the desktop view the single column under the hero image become two columns
 
 
